@@ -47,7 +47,7 @@ without editing the source.
 The post-DESI dark-energy literature has produced a rapid succession of
 Δχ² claims interpreted through Wilks' theorem, with reported tensions
 ranging from roughly 2σ to >5σ [@scherer2025; @hussain2025;
-@mukherjee2025; @akarsu2025; @akarsu2024_lambda_s]. The models in play are
+@alam2025; @nair2025; @akarsu2024_lambda_s]. The models in play are
 heterogeneous: some have redundant parameters (e.g. GDE reduces to CPL when
 β→1, Padé reduces to CPL when w₂→0), some have location parameters that
 freely scan over redshift (Gaussian-EoS zc, BellDE zt), and some are clean
@@ -111,8 +111,8 @@ otherwise heterogeneous model families.
 
 # Acknowledgements
 
-I thank the authors of [@scherer2025], [@hussain2025], [@mukherjee2025], and
-[@akarsu2025] for the published Δχ² results that motivated this
+I thank the authors of [@scherer2025], [@hussain2025], [@alam2025], and
+[@nair2025] for the published Δχ² results that motivated this
 calibration, and the Pantheon+ and DESI collaborations for the public data
 releases that make this kind of independent reanalysis possible.
 
