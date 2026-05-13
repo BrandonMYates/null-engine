@@ -1,0 +1,62 @@
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "null-engine"
+version = "1.0.0"
+description = "Empirical null calibration for dark-energy Δχ² tests against Pantheon+, DESI DR1, and CMB shift parameters"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+authors = [
+    {name = "Brandon Yates", email = "bmichaelyates@gmail.com"},
+]
+keywords = [
+    "cosmology",
+    "dark energy",
+    "supernovae",
+    "BAO",
+    "CMB",
+    "look-elsewhere effect",
+    "Wilks theorem",
+]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Scientific/Engineering :: Astronomy",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.21",
+    "scipy>=1.7",
+]
+
+[project.optional-dependencies]
+test = ["pytest>=7", "pytest-timeout>=2"]
+examples = ["matplotlib>=3.5"]
+
+[project.scripts]
+null-engine = "null_engine.engine:main"
+
+[project.urls]
+Homepage = "https://github.com/bmichaelyates/null-engine"
+Issues = "https://github.com/bmichaelyates/null-engine/issues"
+"Companion paper (Zenodo)" = "https://doi.org/10.5281/zenodo.20145881"
+"Data deposit (Zenodo)" = "https://doi.org/10.5281/zenodo.20145151"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "slow: integration test that runs real mocks (skip with -m 'not slow')",
+]
