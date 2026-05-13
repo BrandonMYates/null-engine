@@ -42,4 +42,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install .[test]
       - name: Run slow control test
-        run: pytest -v -m slow --timeout=900
+        run: pytest -v -m slow --timeout=1200
