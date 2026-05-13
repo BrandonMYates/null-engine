@@ -13,7 +13,7 @@ Companion software to the EPJC Letter
 ## Installation
 
 ```bash
-git clone https://github.com/bmichaelyates/null-engine.git
+git clone https://github.com/BrandonMYates/null-engine.git
 cd null-engine
 pip install .
 ```
